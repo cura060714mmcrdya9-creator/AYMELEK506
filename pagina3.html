@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual HTML - Tema 2: Sintaxis y Elementos</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #ffffff;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header-box {
+            text-align: center;
+            background: #4a0e17;
+            padding: 15px;
+            border-radius: 12px;
+            border: 3px solid #ff007f;
+        }
+
+        h1 { color: #ffeb3b; font-size: 28px; margin: 5px 0; }
+
+        .marquee-info {
+            background-color: #ff0055;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 6px;
+            margin: 10px 0;
+        }
+
+        .manual-card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #ff5722;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        h2 { color: #ff9800; border-bottom: 2px dashed #ff5722; padding-bottom: 5px; }
+
+        .code-box {
+            background: #111;
+            color: #00ffcc;
+            font-family: 'Courier New', monospace;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ff0055;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .btn-menu {
+            display: inline-block;
+            background-color: #ff0055;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            border: 2px solid #ffeb3b;
+        }
+
+        .btn-menu:hover { background-color: #ffeb3b; color: #000; }
+    </style>
+</head>
+<body>
+
+    <div class="header-box">
+        <h1>MANUAL HTML - TEMA 2: SINTAXIS Y ELEMENTOS BASICOS</h1>
+        <marquee class="marquee-info" direction="left" scrollamount="6">
+            Aymelek Guadalupe Cruz Rodriguez | Grupo 506 | CECyTEM La Paz
+        </marquee>
+    </div>
+
+    <div class="manual-card">
+        <h2>1. Sintaxis de Etiquetas de Estructura</h2>
+        <p>En las practicas de HTML utilizamos etiquetas clave para agregar hipervinculos, imagenes y contenedores:</p>
+        <ul>
+            <li><strong>&lt;a href="..."&gt;:</strong> Permite crear un enlace hacia otra pagina web o archivo.</li>
+            <li><strong>&lt;img src="..."&gt;:</strong> Muestra una imagen mediante su ruta de origen.</li>
+            <li><strong>&lt;div&gt;:</strong> Contenedor en bloque usado para agrupar varios elementos a la vez.</li>
+            <li><strong>&lt;span&gt;:</strong> Contenedor en linea para dar formato a partes especificas de un texto.</li>
+        </ul>
+
+        <h2>2. Ejemplo de Codigo Practico</h2>
+
+        <div class="code-box">
+&lt;!-- Ejemplo de hipervinculo e imagen --&gt;<br>
+&lt;a href="https://www.google.com"&gt;Ir a enlace de sitio web&lt;/a&gt;<br><br>
+&lt;img src="foto.jpg" alt="Foto de ejemplo" width="200"&gt;<br><br>
+&lt;!-- Ejemplo de contenedores --&gt;<br>
+&lt;div&gt;<br>
+&nbsp;&nbsp;&lt;p&gt;Texto dentro de un contenedor en bloque&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;span style="color:red;"&gt;Texto resaltado con span&lt;/span&gt;<br>
+&lt;/div&gt;
+        </div>
+    </div>
+
+    <a href="index.html" class="btn-menu">? Volver al Menu Principal</a>
+
+</body>
+</html>

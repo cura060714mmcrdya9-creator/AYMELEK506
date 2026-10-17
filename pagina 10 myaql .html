@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manual MySQL - Tema 10: Ordenamiento</title>
+    <style>
+        body { background: linear-gradient(135deg, #0f172a, #1e293b); color: #fff; font-family: 'Comic Sans MS', sans-serif; padding: 20px; }
+        .header-box { text-align: center; background: #01579b; padding: 15px; border-radius: 12px; border: 3px solid #00e676; }
+        h1 { color: #00e676; font-size: 26px; }
+        .card { background: rgba(255,255,255,0.05); border: 2px solid #03a9f4; padding: 20px; border-radius: 12px; margin-top: 20px; }
+        .code-box { background: #111; color: #facc15; font-family: monospace; padding: 15px; border-radius: 8px; border-left: 5px solid #00e676; margin: 15px 0; }
+        .btn { display: inline-block; background: #00e676; color: #000; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header-box">
+        <h1>MYSQL TEMA 10: ORDENAMIENTO Y ACTUALIZACION</h1>
+    </div>
+    <div class="card">
+        <h2>ORDER BY y UPDATE</h2>
+        <p>Organiza los resultados (ASC/DESC) o actualiza informacion existente:</p>
+        <div class="code-box">
+-- Organizar de forma ascendente<br>
+SELECT * FROM alumnos ORDER BY nombre ASC;<br><br>
+-- Actualizar un registro existente<br>
+UPDATE alumnos SET grupo = '507' WHERE matricula = 1001;
+        </div>
+    </div>
+    <a href="index.html" class="btn">? Volver al Menu</a>
+</body>
+</html>

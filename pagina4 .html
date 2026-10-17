@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manual HTML - Tema 3: Estilos Directos</title>
+    <style>
+        body { background: linear-gradient(135deg, #1f1c2c, #928dab); color: #fff; font-family: 'Comic Sans MS', sans-serif; padding: 20px; }
+        .header-box { text-align: center; background: #4a0e17; padding: 15px; border-radius: 12px; border: 3px solid #ff007f; }
+        h1 { color: #ffeb3b; font-size: 26px; }
+        .card { background: rgba(255,255,255,0.1); border: 2px solid #ff5722; padding: 20px; border-radius: 12px; margin-top: 20px; }
+        .code-box { background: #111; color: #00ffcc; font-family: monospace; padding: 15px; border-radius: 8px; border-left: 5px solid #ff0055; margin: 15px 0; }
+        .btn { display: inline-block; background: #ff0055; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header-box">
+        <h1>TEMA 3: ESTILOS DIRECTOS Y ATRIBUTOS DE COLOR</h1>
+    </div>
+    <div class="card">
+        <h2>Explicacion</h2>
+        <p>Podemos modificar el aspecto visual directamente en las etiquetas usando atributos como <strong>bgcolor</strong> o estilos CSS en linea (<strong>style</strong>).</p>
+        <div class="code-box">
+&lt;!-- Cambiar color de fondo en body --&gt;<br>
+&lt;body bgcolor="BLUE"&gt;<br><br>
+&lt;!-- Estilo CSS inline para color y tamaño --&gt;<br>
+&lt;p style="color: red; font-size: 80px;"&gt;Texto grande y rojo&lt;/p&gt;
+        </div>
+    </div>
+    <a href="index.html" class="btn">? Volver al Menu</a>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Manual HTML - Tema 6: Estilos de Tablas</title>
+    <style>
+        body { background: linear-gradient(135deg, #1f1c2c, #928dab); color: #fff; font-family: 'Comic Sans MS', sans-serif; padding: 20px; }
+        .header-box { text-align: center; background: #4a0e17; padding: 15px; border-radius: 12px; border: 3px solid #ff007f; }
+        h1 { color: #ffeb3b; font-size: 26px; }
+        .card { background: rgba(255,255,255,0.1); border: 2px solid #ff5722; padding: 20px; border-radius: 12px; margin-top: 20px; }
+        .code-box { background: #111; color: #00ffcc; font-family: monospace; padding: 15px; border-radius: 8px; border-left: 5px solid #ff0055; margin: 15px 0; }
+        .btn { display: inline-block; background: #ff0055; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header-box">
+        <h1>TEMA 6: ESTILOS DE TABLAS CON CSS</h1>
+    </div>
+    <div class="card">
+        <h2>Explicacion</h2>
+        <p>Para darle mejor diseño a las tablas, usamos propiedades CSS:</p>
+        <ul>
+            <li><strong>border:</strong> Define el grosor y color del borde (ej. `1px solid black`).</li>
+            <li><strong>border-collapse:</strong> Fusiona los bordes dobles en uno solo para que se vea limpio.</li>
+        </ul>
+        <div class="code-box">
+&lt;style&gt;<br>
+&nbsp;&nbsp;table, th, td { border: 1px solid black; }<br>
+&nbsp;&nbsp;table { border-collapse: collapse; width: 100%; }<br>
+&lt;/style&gt;
+        </div>
+    </div>
+    <a href="index.html" class="btn">? Volver al Menu</a>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal - Manual Web Aymelek Cruz</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: #ffffff;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header-container {
+            text-align: center;
+            background: #4a0e17; /* Tono Vino Tinto */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            border: 3px solid #ff007f;
+        }
+
+        h1 {
+            font-size: 38px;
+            color: #ffeb3b;
+            text-shadow: 2px 2px #ff0055;
+            margin-bottom: 10px;
+        }
+
+        .marquee-nombre {
+            background-color: #ff0055;
+            color: #ffffff;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .school-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .school-info img {
+            width: 90px;
+            height: auto;
+            border-radius: 8px;
+            background-color: white;
+            padding: 5px;
+        }
+
+        .school-text {
+            font-size: 24px;
+            color: #00ffff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Layout en 2 Columnas para Menú */
+        .menu-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .column-html {
+            background: rgba(255, 87, 34, 0.2);
+            border: 3px solid #ff5722;
+            border-radius: 15px;
+            padding: 20px;
+            width: 45%;
+            min-width: 300px;
+            box-sizing: border-box;
+        }
+
+        .column-mysql {
+            background: rgba(3, 169, 244, 0.2);
+            border: 3px solid #03a9f4;
+            border-radius: 15px;
+            padding: 20px;
+            width: 45%;
+            min-width: 300px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .column-html h2 { color: #ff9800; }
+        .column-mysql h2 { color: #00e676; }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        a {
+            display: block;
+            padding: 10px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .column-html a {
+            background-color: #e65100;
+            color: #ffffff;
+        }
+
+        .column-html a:hover {
+            background-color: #ff9800;
+            color: #000;
+            transform: scale(1.03);
+        }
+
+        .column-mysql a {
+            background-color: #01579b;
+            color: #ffffff;
+        }
+
+        .column-mysql a:hover {
+            background-color: #00e676;
+            color: #000;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>PÁGINA WEB (1 y 2 PARCIAL)</h1>
+        
+        <marquee class="marquee-nombre" direction="left" scrollamount="7">
+            Aymelek Guadalupe Cruz Rodríguez | Grupo 506
+        </marquee>
+
+        <div class="school-info">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp6GP1ZSeXKG27xcb1e7XQL8hkz7YbrYBOzLwgq2UE8g&s=10" alt="Logo CECyTEM">
+            <span class="school-text">CECyTEM La Paz</span>
+        </div>
+    </div>
+
+    <div class="menu-container">
+        <!-- Columna HTML (Lado Izquierdo) -->
+        <div class="column-html">
+            <h2>?? BLOQUE 1: HTML & CSS</h2>
+            <ul>
+                <li><a href="pagina2.html">1. Estructura Básica de HTML</a></li>
+                <li><a href="pagina3.html">2. Sintaxis y Elementos Básicos</a></li>
+                <li><a href="pagina4%20.html">3. Estilos Directos y Atributos</a></li>
+                <li><a href="Hipervinculos%20Externos%20.html">4. Hipervínculos Externos</a></li>
+                <li><a href="pagina5%20.html">5. Estructura de Tablas en HTML</a></li>
+                <li><a href="pagina6%20.html">6. Estilos de Tablas con CSS</a></li>
+                <li><a href="pagina7%20.html">7. Formularios e Interacción</a></li>
+                <li><a href="pagina%208%20.html">8. Comentarios y Navegación</a></li>
+                <li><a href="pagina%209%20.html">9. Multimedia e Imágenes</a></li>
+                <li><a href="pagina10%20.html">10. Marquesinas y Prácticas</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna MySQL (Lado Derecho) -->
+        <div class="column-mysql">
+            <h2>??? BLOQUE 2: MYSQL & BASES DE DATOS</h2>
+            <ul>
+                <li><a href="pagina%20mysql%201%20.html">1. Modelado Relacional y Cardinalidad</a></li>
+                <li><a href="pagina%20mysql%202%20.html">2. Gestión de Bases de Datos (DDL)</a></li>
+                <li><a href="pagina%20mysql%203%20.html">3. Creación y Definición de Tablas</a></li>
+                <li><a href="pagina%20mysql%204%20.html">4. Restricciones de Integridad</a></li>
+                <li><a href="pagina%205%20mysql%20.html">5. Modificación, Inserción y Consultas</a></li>
+                <li><a href="pagina%206%20mysql%20.html">6. Eliminación y Renombrado</a></li>
+                <li><a href="pagina%207%20mysql%20.html">7. Inserción de Registros (DML)</a></li>
+                <li><a href="pagina%208%20mysql%20.html">8. Consultas Generales (SELECT)</a></li>
+                <li><a href="pagina%209%20mysql%20.html">9. Filtrado Condicional (WHERE)</a></li>
+                <li><a href="pagina%2010%20myaql%20.html">10. Ordenamiento y Actualización</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
